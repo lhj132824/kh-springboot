@@ -1,0 +1,14 @@
+package com.kh.bookmanager.rent;
+
+import java.sql.Date;
+
+public class Rent {
+
+	private Long rmIdx;
+	private String userId;
+	private Date regDate;
+	private int isReturn;
+	private String title;
+	private int rentBookCnt;
+
+}

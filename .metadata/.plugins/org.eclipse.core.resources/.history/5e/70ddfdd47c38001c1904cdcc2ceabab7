@@ -1,0 +1,5 @@
+package com.kh.bookmanager.member;
+
+public class MemberRepository {
+	
+}
