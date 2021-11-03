@@ -1,2 +1,5 @@
 content-types/org.eclipse.core.runtime.text/charset=UTF-8
+content-types/org.springframework.boot.ide.properties.application.properties/charset=UTF-8
+content-types/org.springframework.boot.ide.properties.application.properties/file-names=messages.properties
+content-types/org.springframework.boot.ide.properties.application.properties/file-patterns=messages_*.properties
 eclipse.preferences.version=1
