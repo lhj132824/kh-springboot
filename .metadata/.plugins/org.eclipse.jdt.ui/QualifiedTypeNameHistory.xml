@@ -23,8 +23,6 @@
     <fullyQualifiedTypeName name="lombok.RequiredArgsConstructor"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="com.kh.spring.book.BookRepository"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
     <fullyQualifiedTypeName name="org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc"/>
     <fullyQualifiedTypeName name="org.springframework.test.web.servlet.MockMvc"/>
@@ -36,7 +34,6 @@
     <fullyQualifiedTypeName name="com.kh.spring.querydsl.QueryDSLRepositoryCustom"/>
     <fullyQualifiedTypeName name="com.querydsl.jpa.impl.JPAQueryFactory"/>
     <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.kh.spring.rent.Rent"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayName"/>
@@ -48,8 +45,19 @@
     <fullyQualifiedTypeName name="com.querydsl.core.Tuple"/>
     <fullyQualifiedTypeName name="com.kh.spring.member.QMember"/>
     <fullyQualifiedTypeName name="com.kh.spring.book.QBook"/>
-    <fullyQualifiedTypeName name="com.kh.spring.member.Member"/>
     <fullyQualifiedTypeName name="com.querydsl.jpa.JPAExpressions"/>
     <fullyQualifiedTypeName name="com.querydsl.core.types.dsl.BooleanExpression"/>
     <fullyQualifiedTypeName name="com.kh.spring.book.Book"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="com.kh.spring.member.Member"/>
+    <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.kh.spring.food.Food"/>
 </qualifiedTypeNameHistroy>

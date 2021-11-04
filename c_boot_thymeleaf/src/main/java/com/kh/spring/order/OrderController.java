@@ -1,34 +1,36 @@
 package com.kh.spring.order;
 
-import java.util.LinkedHashMap;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
-import javax.servlet.http.HttpSession;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.kh.spring.food.Food;
+import lombok.RequiredArgsConstructor;
 
 @Controller
+@RequestMapping("order")
+@RequiredArgsConstructor
 public class OrderController {
 
-	@GetMapping("order/order-form")
+	private final OrderService orderService;
+	
+	@GetMapping("order-form")
 	public void orderForm() {}
 	
-	@PostMapping("order/receipt")
-	public void receipt(@RequestParam Map<String,Object> foodMap ,Model model) {
-		Map<String,Object> orders = new LinkedHashMap<>();
-		orders.put("피자", 30000);
-		orders.put("햄버거",5000);
-		orders.put("회",20000);
-		orders.put("치킨", 18000);
+	@PostMapping("order")
+	public String order(@RequestParam(required = false, name = "food") Optional<List<String>> foods, Model model) {
 		
-		model.addAttribute("foodMap",foodMap);
+		Map<String, Object> commandMap = orderService.order(foods.orElseGet(() -> List.of()));  //.orElse(List.of()) 연산할 값 없이 빈 리스트만 보낼 때
+		model.addAllAttributes(commandMap);
+		return "order/receipt";
 	}
 	
 }

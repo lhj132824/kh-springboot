@@ -5,7 +5,21 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-11-02T19:00:00Z</updated>
+  <updated>2021-11-03T21:00:00Z</updated>
+  <entry>
+    <title>Spring Tips: @Controllers: Give HTTP a REST</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/11/03/spring-tips-controllers-give-http-a-rest" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-11-03:4592</id>
+    <updated>2021-11-03T21:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, we&amp;rsquo;ll continue our exploration of &lt;code&gt;@Controller&lt;/code&gt;s, and look at HTTP APIs and SSE with Spring. This time, we&amp;rsquo;ll use Spring Webflux. &lt;/p&gt;
+&lt;p&gt;The code is here: github.com/spring-tips/controllers&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/V9KVOHkcxPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - November 2nd, 2021</title>
     <link rel="alternate" href="https://spring.io/blog/2021/11/02/this-week-in-spring-november-2nd-2021" />
@@ -806,39 +820,6 @@ compile &amp;#39;org.springframework.cloud:spring-cloud-starter-netflix-eureka-c
   &lt;li&gt;Support for configuring different WebClient.Builder beans (not shared) for each &lt;code&gt;@RetrofitClient&lt;/code&gt; instance (&lt;a href="https://github.com/spring-cloud-incubator/spring-cloud-square/pull/30"&gt;PR&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The documentation for this milestone can be found &lt;a href="https://spring-cloud-incubator.github.io/spring-cloud-square/docs/current/reference/html/index.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - October 19th, 2021</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/10/19/this-week-in-spring-october-19th-2021" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2021-10-19:4571</id>
-    <updated>2021-10-19T17:00:00Z</updated>
-    <content type="html">&lt;img  style = "text-align: center;" width="600" src="https://content.cdntwrk.com/files/aHViPTYzOTc1JmNtZD1pdGVtZWRpdG9yaW1hZ2UmZmlsZW5hbWU9aXRlbWVkaXRvcmltYWdlXzYxNjkwNTA1Y2ViNWUuanBnJnZlcnNpb249MDAwMCZzaWc9YTQyODAzMjJkZDI0YTc4NjQ5NjIyMTg5YmVmYTM1ZWQ%253D" /&gt;
-&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! How&amp;rsquo;re you doing? Good? Keepin&amp;rsquo; busy? Good. I&amp;rsquo;m doing alright, too. &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Last week, I did a sort of &lt;em&gt;sm?rg?sbord&lt;/em&gt; episode of Tanzu Code on &lt;a href="https://twitch.tv/vmwaretanzu"&gt;twitch.tv/vmwaretanzu&lt;/a&gt;. It was super fun! I stream on VMWare Tanzu as well as on my own Twitch channel, &lt;a href="https://twitch.tv/JavaJoshLong"&gt;twitch.tv/JavaJoshLong&lt;/a&gt; about all things Spring, Java, and more.&lt;/li&gt;
-  &lt;li&gt;In last week&amp;rsquo;s super short-and-to-the-point installment of &lt;a href="https://spring.io/blog/2021/10/13/spring-tips-spring-plugin"&gt;&lt;em&gt;Spring Tips&lt;/em&gt;, I looked at the Spring Plugin project&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I also put out &lt;a href="https://tanzu.vmware.com/content/josh-blog/this-month-in-spring-october-2021"&gt;&lt;em&gt;This Month in Spring&lt;/em&gt;&lt;/a&gt; - a newsletter digest version of this very weekly roundup that comes out every&amp;hellip; month. Naturally.&lt;/li&gt;
-  &lt;li&gt;Did you see this? Twitter is now using &lt;code&gt;graphql-java&lt;/code&gt;, the very same project that underpins the Spring GraphQL project, for their APIs and they&amp;rsquo;re reporting incredible performance gains! &lt;a href="https://github.com/graphql-java/graphql-java/discussions/2591"&gt;twitter + graphql-java ， Discussion #2591 ， graphql-java/graphql-java&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;In last week&amp;rsquo;s &lt;a href="https://spring.io/blog/2021/10/14/a-bootiful-podcast-net-legend-layla-porter-on-azure-spring-cloud-steeltoe-net-and-more"&gt;&lt;em&gt;A Bootiful Podcast&lt;/em&gt;, I talked to .NET legend Layla Porter on Azure Spring Cloud, Steeltoe.NET, and more&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://knative.dev/blog/articles/announcing-knative-1.0/"&gt;Announcing: Knative 1.0 &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.steadybit.com/blog/harden-performance-rest-calls-spring-webflux"&gt;Harden Performance of REST calls using Spring WebFlux&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://javarevisited.blogspot.com/2021/10/how-to-upload-download-file-using-spring.html?m=1"&gt;How to upload/download file using Spring MVC and Spring Boot ? Example Tutorial&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://youtube.com/watch?v=F9oydL_MndA&amp;feature=share"&gt; Matt Raible and I did a talk for the SF JUG about Spring Native and GraalVM with Spring Boot and JHipster&lt;/a&gt;. It was a ton of fun and I hope you&amp;rsquo;ll enjoy it.&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://dev.to/__nikolamicic21/multiple-hierarchical-contexts-in-spring-boot-25nf"&gt;Multiple Hierarchical Contexts in Spring Boot - DEV Community&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Did you get your tickets for the &lt;a href="https://twitter.com/reactivesummit/status/1448414246941954056?s=12"&gt;Reactive Summit &lt;/a&gt;? There are going to be some amazing talks this year!&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/testcontainers/testcontainers-java/releases/tag/1.16.1"&gt;Release 1.16.1 ， testcontainers/testcontainers-java&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/reactor/reactor/releases/tag/2020.0.12"&gt;Release Europium-SR12 (2020.0.12) ， reactor/reactor&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/10/18/spring-data-2021-0-6-and-2020-0-14-released"&gt;Spring Data 2021.0.6 and 2020.0.14 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/10/18/spring-data-2021-1-enters-rc-phase"&gt;Spring Data 2021.1 enters RC phase&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/10/18/spring-data-jdbc-how-do-i-implement-caching"&gt;Spring Data JDBC - How do I implement caching?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/10/14/spring-framework-5-3-11-and-5-2-18-available-now"&gt;Spring Framework 5.3.11 and 5.2.18 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://m.youtube.com/watch?v=MuwjqsYMHvA&amp;feature=youtu.be"&gt;The State of Java 2021&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
