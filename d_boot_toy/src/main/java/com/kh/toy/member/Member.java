@@ -31,6 +31,7 @@ public class Member {
 	   @Column(columnDefinition = "date default sysdate")
 	   private LocalDate regDate;
 	   
+	   @Column(columnDefinition = "number default 0")
 	   private Boolean isLeave;
 	   
 	   
