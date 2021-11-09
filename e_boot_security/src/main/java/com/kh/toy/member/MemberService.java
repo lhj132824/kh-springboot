@@ -30,7 +30,6 @@ public class MemberService implements UserDetailsService{
 	@Transactional
 	public void persistMember(JoinForm form) {
 		Member member = form.convertToMember();
-		member.setGrade("일반");
 		member.setPassword(passwordEncoder.encode(form.getPassword()));
 		memberRepository.save(member);
 	}
